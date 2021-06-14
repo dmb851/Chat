@@ -4,6 +4,7 @@ var nameForm = document.getElementById('nameForm');
 var input = document.getElementById('input');
 var nameInput = document.getElementById('inputName');
 var messages = document.getElementById('messages');
+var nameHtml = document.getElementById('user-name');
 
 class User{
     constructor(name = "anonymous"){
@@ -16,6 +17,7 @@ if(nameForm){
         e.preventDefault();
         if (nameInput.value) {
             myUser.name = nameInput.value;
+            nameHtml.innerHTML = nameInput.value;
         }
     });
 }

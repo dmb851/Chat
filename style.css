@@ -22,8 +22,16 @@
 }
 
 .messages{
+    margin: 0 auto 0 auto;
+    width: 55%;
     margin-top: 3rem;
     border-style: solid;
     border-color: orange;
     border-radius: 2rem;
+}
+
+.myName{
+
+    text-align: center;
+    display: flex;
 }
